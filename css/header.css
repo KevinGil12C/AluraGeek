@@ -1,0 +1,85 @@
+@import url("style.css");
+
+.header {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    height: 75%;
+    padding: 0 1.5em;
+    background-color: var(--color-card);
+    transition: var(--transition);
+}
+
+.switches {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.toggle-theme {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.toggle-theme-icon {
+    margin-right: 0.5em;
+    width: 25px;
+    height: 25px;
+    margin-top: 1em;
+}
+
+.toggle-theme-text {
+    font-size: 0.8rem;
+    font-family: "Press Start 2P", system-ui;
+    margin-top: 1.8em;
+    color: var(--text-color);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.logo-text {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color);
+}
+
+.colors {
+    margin: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    width: 100px;
+}
+
+.colors_item {
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid var(--text-color);
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.color_item--1 {
+    --primary-color: hsl(314, 95%, 26%);
+}
+
+.color_item--2 {
+    --primary-color: hsl(286, 98%, 42%);
+}
+
+.color_item--3 {
+    --primary-color: hsl(289, 94%, 27%);
+}
+
+.color_item--4 {
+    --primary-color: hsl(255, 95%, 43%);
+}
