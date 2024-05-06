@@ -1,6 +1,6 @@
 async function listar_productos() {
     try {
-        const conexion = await fetch("https://alura-geek-sandy.vercel.app/productos", {
+        const conexion = await fetch("http://localhost:3001/productos", {
             method: "GET",
             headers: {
                 "Content-type": "application/json"
@@ -18,7 +18,7 @@ async function listar_productos() {
 async function crear_producto(nombre, precio, imagen) {
     console.log("Creando producto...");
     console.log("Datos recibidos:", nombre, precio, imagen);
-    const conexion = await fetch("https://alura-geek-sandy.vercel.app/productos", {
+    const conexion = await fetch("http://localhost:3001/productos", {
         method: "POST",
         headers: {
             "Content-type": "application/json"
@@ -38,7 +38,7 @@ async function crear_producto(nombre, precio, imagen) {
 }
 
 async function buscar_producto(referencia) {
-    const conexion = await fetch(`https://alura-geek-sandy.vercel.app/productos?q=${referencia}`)
+    const conexion = await fetch(`http://localhost:3001/productos?q=${referencia}`)
     const conexionConvertida = conexion.json();
 
     return conexionConvertida;
@@ -47,7 +47,7 @@ async function buscar_producto(referencia) {
 
 export async function eliminar_producto(idProducto) {
     try {
-        const conexion = await fetch(`https://alura-geek-sandy.vercel.app/productos/${idProducto}`, {
+        const conexion = await fetch(`http://localhost:3001/productos/${idProducto}`, {
             method: "DELETE",
             headers: {
                 "Content-type": "application/json"
