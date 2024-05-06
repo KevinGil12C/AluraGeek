@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -50,6 +51,12 @@
     <main class="main">
         <section class="column column--left">
             <p class="title-text">MIS PRODUCTOS:</p>
+            <div class="encabezado__buscar">
+                <input type="search" placeholder="Buscar" id="buscar" class="buscar__input" data-busqueda>
+                <button class="buscar__boton" data-boton-busqueda></button>
+                
+            </div>
+            
             <div class="card-container"data-lista>
                 <!-- <div class="card">
                     <img src="img/Capt-Sidekick-Tall-1.jpeg" class="card-img" />
@@ -137,6 +144,7 @@
                     <input class="btn-limpiar" type="reset" value="Limpiar"/>
                 </div>
             </form>
+            <div class="respuesta"></div>
         </section>
         
     </main>
@@ -161,6 +169,8 @@
     <script src="js/main.js" type="module"></script>
     <script src="js/mostrarProductos.js" type="module"></script>
     <script src="js/crearProducto.js" type="module"></script>
+    <script src="js/buscarProducto.js" type="module"></script>
+    <script src="js/eliminarProducto.js" type="module"></script>
 </body>
 
 </html>

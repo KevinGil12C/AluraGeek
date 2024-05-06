@@ -1,5 +1,31 @@
 @import url("style.css");
 
+.buscar__input {
+    width: 260px;
+    height: 32px;
+    border: 1px solid rgb(211, 211, 211);
+    font-size: 16px;
+    padding: 3px 8px;
+    border: 1px solid rgb(211, 211, 211);
+    color: var(--primary-color);
+}
+
+.buscar__boton {
+    background-image: url("../img/search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid rgb(211, 211, 211);
+    background-color: #F9F9F9;
+    border-left: none;
+    padding: 15px 15px;
+    cursor: pointer;
+}
+
+.encabezado__buscar {
+    display: flex;
+    justify-content: center;
+}
+
 .title-text {
     text-align: center;
     font-size: 1.2em;
@@ -33,7 +59,15 @@
     height: auto;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    width: 800px;
+
 }
+
+.eliminar-producto{
+    cursor: pointer;
+    background-color: var(--card-color);
+}
+
 .column--left::-webkit-scrollbar {
     width: 12px;  
 }
@@ -49,7 +83,7 @@
 
 .column--right {
     margin-left: 1em;
-    width: 60%;
+    max-width: 500px;
     /* Establecer el ancho del 40% para la columna derecha */
 }
 
@@ -96,6 +130,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    padding: 0;
 }
 
 .card-container--value-img {
@@ -108,6 +143,7 @@
     font-weight: 600;
     font-style: normal;
     font-size: 1.1em;
+
 }
 
 fieldset {

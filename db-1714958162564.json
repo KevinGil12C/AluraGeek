@@ -53,6 +53,18 @@
       "precio": "1029",
       "imagen": "https://img.joomcdn.net/69f60294a1687d860005e148fe942aa3f71176fc_original.jpeg",
       "id": 9
+    },
+    {
+      "nombre": "Zhongli-figura de Anime GK",
+      "precio": "1029",
+      "imagen": "https://img.joomcdn.net/69f60294a1687d860005e148fe942aa3f71176fc_original.jpeg",
+      "id": 10
+    },
+    {
+      "nombre": "Anime Goku Af Figura Butter",
+      "precio": "435",
+      "imagen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/0d98df9b-0608-4fb6-887d-ea67a8596b6b.640f3b9522ef04809c9e439369836e29.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+      "id": 11
     }
   ]
 }

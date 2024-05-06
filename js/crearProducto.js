@@ -1,7 +1,7 @@
 import { conexionAPI } from "./conexionAPI.js";
 
 const formulario = document.querySelector("form");
-
+const respuestaDiv = document.querySelector(".respuesta");
 
 async function crear_producto(evento) {
     evento.preventDefault();
@@ -10,8 +10,19 @@ async function crear_producto(evento) {
     const imagen = document.querySelector("[data-imagen]").value;
 
     try {
-        await conexionAPI.crear_producto(nombre, precio, imagen); // Utiliza await para esperar a que se resuelva la promesa
-        window.location.href = "../envio-terminado.html";
+        
+        const result = await Swal.fire({
+            title: 'Producto Agregado',
+            text: 'El producto se ha agregado correctamente.',
+            icon: 'success',
+            showConfirmButton: true,
+            confirmButtonText: 'Aceptar'
+        });
+        // Si el usuario hace clic en "Aceptar", redirecciona a la página principal
+        if (result.isConfirmed) {
+            const producto = await conexionAPI.crear_producto(nombre, precio, imagen);
+            window.location.href = "../index.html";
+        }
     } catch (error) {
         alert(error);
     }
