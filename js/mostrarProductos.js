@@ -24,9 +24,9 @@ export default function crearCard(nombre, precio, imagen, id) {
         </div>`
     producto.innerHTML = contenido;
     const btneliminar = producto.querySelector(".eliminar-producto")
-    btneliminar.addEventListener("click", () => {
+    btneliminar.addEventListener("click", async() => {
         const id = btneliminar.id;
-        eliminarProducto(id);
+        await eliminarProducto(id);
          
     });
     return producto;

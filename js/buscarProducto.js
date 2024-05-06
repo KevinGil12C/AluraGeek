@@ -15,7 +15,7 @@ async function buscar_producto(evento){
     listaDeBusqueda.replaceChildren();
 
     busqueda.forEach(elemento => listaDeBusqueda.
-        appendChild(crearCard(elemento.nombre,elemento.precio,elemento.imagen)));
+        appendChild(crearCard(elemento.nombre,elemento.precio,elemento.imagen, elemento.id)));
 
      if(busqueda.length==0){
         listaDeBusqueda.innerHTML=`<h2 class="mensaje__titulo">No encontramos videos para ese filtro ${datosDeBusqueda}</h2>`;
