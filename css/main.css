@@ -37,7 +37,7 @@
 .main {
     display: flex;
     justify-content: space-around;
-    padding: 3em;
+    padding: 1em;
     gap: 2em;
     padding-bottom: 100px;
 }
@@ -96,7 +96,7 @@
 
 .card {
     flex: 0 1 calc(33.33% - 3em);
-    max-width: calc(33.33% - 3em);
+    
     /* Cambiar el ancho de la tarjeta */
     padding: 0.5em 0.7em 0 0.5em;
     background-color: var(--primary-color);

@@ -8,6 +8,7 @@
     padding: 0 1.5em;
     background-color: var(--color-card);
     transition: var(--transition);
+    width: 100%;
 }
 
 .switches {
